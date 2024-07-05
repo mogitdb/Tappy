@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://jo5ard82o363"]
+[gd_scene load_steps=4 format=3 uid="uid://jo5ard82o363"]
 
 [ext_resource type="Texture2D" uid="uid://dh14t5vbkm0uc" path="res://assets/background/rocks_2.png" id="1_sni7q"]
 [ext_resource type="PackedScene" uid="uid://bl8cdmvfek7dl" path="res://scenes/plane/plane.tscn" id="2_cgt6r"]
+[ext_resource type="PackedScene" uid="uid://c2iinnomayp3e" path="res://scenes/barrier/barrier.tscn" id="3_8wck5"]
 
 [node name="Game" type="Node2D"]
 
@@ -11,3 +12,9 @@ texture = ExtResource("1_sni7q")
 
 [node name="Plane" parent="." instance=ExtResource("2_cgt6r")]
 position = Vector2(64, 404)
+
+[node name="Barrier" parent="." instance=ExtResource("3_8wck5")]
+position = Vector2(0, 865)
+
+[node name="Barrier2" parent="." instance=ExtResource("3_8wck5")]
+position = Vector2(0, -26)

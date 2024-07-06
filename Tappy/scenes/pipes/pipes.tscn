@@ -1,18 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://lf8kjbmefjrg"]
 
-[ext_resource type="Script" path="res://pipes/pipes.gd" id="1_l1705"]
-[ext_resource type="PackedScene" uid="uid://bhpqo55wijdg2" path="res://laser/laser.tscn" id="1_t6iss"]
-[ext_resource type="PackedScene" uid="uid://bwoycn5dtdxwq" path="res://pipe/pipe.tscn" id="2_w5mbr"]
+[ext_resource type="Script" path="res://scenes/pipes/pipes.gd" id="1_og0d0"]
+[ext_resource type="PackedScene" uid="uid://bhpqo55wijdg2" path="res://scenes/laser/laser.tscn" id="2_stg01"]
+[ext_resource type="PackedScene" uid="uid://bwoycn5dtdxwq" path="res://scenes/pipe/pipe.tscn" id="3_msn1g"]
 
-[node name="Pipes" type="Node2D"]
-script = ExtResource("1_l1705")
+[node name="Pipes" type="Node2D" groups=["pipes"]]
+script = ExtResource("1_og0d0")
 
-[node name="Laser" parent="." instance=ExtResource("1_t6iss")]
+[node name="Laser" parent="." instance=ExtResource("2_stg01")]
 
-[node name="Lower" parent="." instance=ExtResource("2_w5mbr")]
+[node name="Lower" parent="." instance=ExtResource("3_msn1g")]
 position = Vector2(0, 80)
 
-[node name="Upper" parent="." instance=ExtResource("2_w5mbr")]
+[node name="Upper" parent="." instance=ExtResource("3_msn1g")]
 position = Vector2(0, -80)
 rotation = 3.14159
 

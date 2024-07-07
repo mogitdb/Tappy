@@ -28,6 +28,7 @@ _data = {
 }
 
 [node name="Laser" type="Area2D"]
+collision_layer = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0.138891)

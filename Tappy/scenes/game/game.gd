@@ -15,9 +15,6 @@ func _ready():
 	ScoreManager.set_score(0)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 
 func spawn_pipes() -> void:

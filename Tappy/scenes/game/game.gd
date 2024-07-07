@@ -10,6 +10,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	SignalManager.on_plane_died.connect(_on_plane_died)
 	spawn_pipes()
 
 
@@ -29,9 +30,6 @@ func spawn_pipes() -> void:
 
 func stop_pipes() -> void:
 	spawn_timer.stop()
-	var pipes = get_tree().get_nodes_in_group("pipes")
-	for pipe in pipes:
-		pipe.set_process(false)
 
 func _on_spawn_timer_timeout():
 	spawn_pipes()

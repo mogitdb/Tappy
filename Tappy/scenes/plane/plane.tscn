@@ -35,6 +35,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_ao22g"]
 radius = 25.0
 
+[sub_resource type="Animation" id="Animation_65tf1"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_8icc0"]
 resource_name = "power"
 length = 0.3
@@ -50,9 +53,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [0.0, -0.349066, 0.0]
 }
-
-[sub_resource type="Animation" id="Animation_65tf1"]
-length = 0.001
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_obyu0"]
 _data = {
